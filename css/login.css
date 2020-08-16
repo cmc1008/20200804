@@ -1,0 +1,45 @@
+.login label {
+    color: #23282d;
+    font-weight: 600;
+}
+#login {
+    width: 65%;
+    margin: 4% auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 20px 0 rgba(69,90,100,.08);
+    padding: 20px;
+    background-image: url(https://pdbn.top/uploads/2019/07/2019071207101334.jpg);
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    background-size: cover;
+}
+.login h1,.message, .login form{
+    width: 280px;
+    box-sizing: border-box;
+}
+.login h1 a {
+    background-image: url(../img/logo.png) !important;
+    margin: 0;
+    width: 300px;
+}
+.login form {
+    border-radius: 5px;
+}
+.login #backtoblog a, .login #nav a {
+    color: #ffffff;
+}
+.copyright {
+    text-align: center;
+}
+
+@media screen and (max-width: 51rem){
+#login {width: 90%;background-image: none;}
+.login form{
+    width: 100%;
+}
+.login h1 a {
+    margin: 0 auto;
+    width: 90%;
+}
+}
