@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: hl;
-    src: url(./jxzk2.0.ttf)
+    src: url(https://cdn.jsdelivr.net/gh/small-rose/small-rose.github.io/box/font/hl.ttf)
 }
 
 * {
@@ -111,7 +111,11 @@ li.post {
 }
 
 #entry li {
-    text-indent: 2rem;
+    margin-left: 2rem;
+}
+
+code {
+    color: #cf2e2e;
 }
 
 input, select,button, #comment {
@@ -229,6 +233,7 @@ input:-webkit-autofill {
     -moz-box-shadow: 5px 5px 5px rgba(0,0,0,0.8);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
+
 #main:before {
     content: "";
     position: absolute;
@@ -243,10 +248,11 @@ input:-webkit-autofill {
     box-shadow: 7px 7px 7px rgba(0,0,0,0.3);
 }
 
-.widget-title-archive{
-    display:inline-block;
-    margin-right:.5rem
+.widget-title-archive {
+    display: inline-block;
+    margin-right: .5rem
 }
+
 article p, pre, article img {
     margin: 1rem 0;
     line-height: 2.2;
@@ -259,8 +265,8 @@ article img {
 
 .wp-block-image figcaption {
     margin-top: -1rem;
-    color:#6c7781;
-    text-align:center
+    color: #6c7781;
+    text-align: center
 }
 
 .wp-block-image figcaption:after {
@@ -414,6 +420,11 @@ blockquote {
     background-color: #abb8c3;
 }
 
+::selection {
+    background-color: #ed6d64;
+    color: #1e1f26
+}
+
 @media screen and (max-width: 65rem) {
     body {
         width:80%;
@@ -425,15 +436,14 @@ blockquote {
         width: 96%;
     }
 
-    #main{
+    #main {
         padding: 2rem 1rem;
     }
 }
 
 @media screen and (min-width: 65rem) {
     body {
-        background: url("https://pdbn.top/uploads/2016/02/bg.png") right top no-repeat fixed
-,url("https://pdbn.top/wp-content/themes/pdbnn/img/bg1.png") right 10% no-repeat fixed;
+        background: url("https://pdbn.top/uploads/2016/02/bg.png") right top no-repeat fixed ,url("https://pdbn.top/wp-content/themes/pdbnn/img/bg1.png") right 10% no-repeat fixed;
         background-color: #f1f1f1;
     }
 
