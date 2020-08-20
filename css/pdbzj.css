@@ -1,11 +1,4 @@
 @font-face {
-    font-family: 'satisfy';
-    font-style: normal;
-    font-weight: 400;
-    src: url(./satisfy.woff) format('woff');
-}
-
-@font-face {
     font-family: hl;
     src: url(https://cdn.jsdelivr.net/gh/small-rose/small-rose.github.io/box/font/hl.ttf)
 }
@@ -17,7 +10,7 @@
 }
 
 body {
-    font: normal 1rem/1.6 hl,'Microsoft YaHei',Arial,sans-serif;
+    font: normal 1rem/1.6 'Microsoft YaHei',Arial,sans-serif;
     margin: auto;
     color: #1e1f26;
     word-wrap: break-word;
@@ -28,6 +21,7 @@ body {
 a {
     color: #1e1e1e;
     text-decoration: none;
+    font-family: hl;
 }
 
 .site-title a, #entry a, .nav-links a, .site-footer a {
@@ -73,6 +67,7 @@ h6 {
 h1, h2, h3, h4, h5, h6 {
     margin: 1rem 0;
     line-height: 1.4;
+    font-family: hl;
 }
 
 pre {
@@ -215,7 +210,6 @@ input:-webkit-autofill {
     margin: 0;
     line-height: 1.4;
     font-weight: 400;
-    font-family: satisfy,sans-serif;
 }
 
 .site-description, .taxonomy-description {
@@ -228,7 +222,7 @@ input:-webkit-autofill {
     padding: 2rem;
     margin: 1rem 0;
     border-radius: .25rem;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgb(255, 255, 255);
     -webkit-box-shadow: 5px 5px 5px rgba(0,0,0,0.8);
     -moz-box-shadow: 5px 5px 5px rgba(0,0,0,0.8);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
@@ -255,7 +249,7 @@ input:-webkit-autofill {
 
 article p, pre, article img {
     margin: 1rem 0;
-    line-height: 2.2;
+    line-height: 2;
 }
 
 article img {
