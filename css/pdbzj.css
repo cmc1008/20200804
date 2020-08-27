@@ -10,7 +10,7 @@
 }
 
 body {
-    font: normal 1rem/1.6 'Microsoft YaHei',Arial,sans-serif;
+    font: normal 1.125rem/1.6 'Microsoft YaHei',Arial,sans-serif;
     margin: auto;
     color: #1e1f26;
     word-wrap: break-word;
@@ -118,7 +118,7 @@ input, select,button, #comment {
     border: 1px solid #abb8c3;
     background-color: #f1f1f1;
     border-radius: .25rem;
-    padding: .5rem 1rem;
+    padding: .25rem;
     margin: .25rem 0;
 }
 
@@ -221,15 +221,13 @@ input:-webkit-autofill {
     position: relative;
     padding: 2rem;
     margin: 1rem 0;
+    border: .0625rem solid #585858;
     border-radius: .25rem;
     background-color: rgb(255, 255, 255);
-    -webkit-box-shadow: 5px 5px 5px rgba(0,0,0,0.8);
-    -moz-box-shadow: 5px 5px 5px rgba(0,0,0,0.8);
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
 #main:before {
-    content: "";
+    /* content: ""; */
     position: absolute;
     left: 0;
     top: 0;
@@ -284,7 +282,7 @@ blockquote {
 }
 
 .comment-form-author label, .comment-form-email label, .comment-form-url label {
-    width: 5rem;
+    width: 6rem;
     display: inline-block;
     text-align-last: justify;
 }
@@ -428,10 +426,11 @@ blockquote {
 @media screen and (max-width: 27rem) {
     body {
         width: 96%;
+        font-size: 1rem;
     }
 
     #main {
-        padding: 2rem 1rem;
+        padding: 1rem;
     }
 }
 
