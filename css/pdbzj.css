@@ -235,7 +235,6 @@ article img {
 .wp-block-image figcaption {
     margin-top: -1rem;
     color: #6c7781;
-    text-align: center
 }
 
 .wp-block-image figcaption:after {
