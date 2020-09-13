@@ -5,14 +5,14 @@
 }
 
 body {
-    font: normal 1rem/1.6 STXihei,'Microsoft YaHei',Arial,sans-serif;
+    font: normal 1.125rem/1.6 STXihei,'Microsoft YaHei',Arial,sans-serif;
     color: #444;
     word-wrap: break-word;
 }
 
 @media screen and (min-width: 65rem) {
     body.home {
-        width: 60%;
+        width: 70%;
         margin: auto;
     }
 }
@@ -391,6 +391,9 @@ blockquote {
 }
 
 @media screen and (max-width: 27rem) {
+    body{
+        font-size:1rem
+    }
     #masthead, #main, .site-footer {
         width: 90%;
     }
