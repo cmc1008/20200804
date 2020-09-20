@@ -378,11 +378,15 @@ blockquote {
     background-color: #135488;
 }
 
-@media screen and (min-width: 65rem) {
+#he-plugin-standard {
+    position: absolute !important;
+    top: 0;
+    right: 1rem;
+}
+
+@media screen and (max-width: 65rem) {
     #he-plugin-standard {
-        position: absolute;
-        top: 0;
-        right: 1rem;
+        display:none
     }
 }
 
