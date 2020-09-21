@@ -356,14 +356,6 @@ blockquote {
     margin-top: 3rem;
 }
 
-.wp-block-latest-posts__post-date {
-    /* float: right; */
-    /* margin-bottom: 1rem; */
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: space-between; */
-}
-
 .wp-block-search .wp-block-search__input {
     max-width: none;
 }
