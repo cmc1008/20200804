@@ -73,7 +73,7 @@ img {
     height: auto;
 }
 
-.wp-block-latest-posts.wp-block-latest-posts__list li:before {
+.wp-block-latest-posts.wp-block-latest-posts__list li a:before {
     content: "";
     display: inline-block;
     margin-right: .75rem;
@@ -357,8 +357,11 @@ blockquote {
 }
 
 .wp-block-latest-posts__post-date {
-    float: right;
-    margin-bottom: 1rem;
+    /* float: right; */
+    /* margin-bottom: 1rem; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: space-between; */
 }
 
 .wp-block-search .wp-block-search__input {
