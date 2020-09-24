@@ -8,6 +8,7 @@ body {
     font: normal 1.125rem/1.6 'Microsoft YaHei',Arial,sans-serif;
     color: #32373c;
     word-wrap: break-word;
+    counter-reset: li;
 }
 
 a {
@@ -73,15 +74,12 @@ img {
 }
 
 .wp-block-latest-posts.wp-block-latest-posts__list li a:before {
-    content: "";
-    display: inline-block;
-    margin-right: .75rem;
-    margin-bottom: .1875rem;
-    height: .3125rem;
-    width: .3125rem;
-    border-radius: 50%;
-    box-shadow: 0 0 0px 4px rgba(6, 147, 227, 0.2);
-    background-color: #135488;
+    content: counter(li)"、";
+    counter-increment: li;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1;
+    color: #0693e3;
 }
 
 li.post {
