@@ -6,7 +6,8 @@
 
 body {
     font: normal 1.125rem/1.6 'Microsoft YaHei',Arial,sans-serif;
-    color: #32373c;
+    color: #2c3e50;
+    background-color: #f8f8f0;
     word-wrap: break-word;
     counter-reset: li;
 }
@@ -59,7 +60,7 @@ pre {
     word-wrap: break-word;
     padding: 1rem;
     border-radius: .25rem;
-    background-color: #32373c;
+    background-color: #2c3e50;
     color: #f1f1f1;
     line-height: 1.4;
 }
@@ -194,7 +195,7 @@ input:-webkit-autofill {
 }
 
 #main, .site-footer {
-    padding: 1rem 15%;
+    padding: 2rem 20%;
 }
 
 .widget-title-archive {
