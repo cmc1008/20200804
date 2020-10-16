@@ -170,9 +170,13 @@ input:-webkit-autofill {
     float: left;
     width: 30%;
     height: 100%;
-    writing-mode: tb-rl;
-    -webkit-writing-mode: vertical-rl;      
-    writing-mode: vertical-rl;
+}
+
+.header-warp {
+     width: 100%;
+     writing-mode: tb-rl;
+     -webkit-writing-mode: vertical-rl;
+     writing-mode: vertical-rl;
 }
 
 .post-meta, .post-meta a, .commentmetadata-content, .wp-block-image figcaption,.site-footer {
