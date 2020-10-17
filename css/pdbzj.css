@@ -70,6 +70,7 @@ pre {
     line-height: 1.4;
     max-height: 30rem;
     overflow: auto;
+    margin: 1rem 0;
 }
 
 option {
@@ -173,10 +174,8 @@ input:-webkit-autofill {
 }
 
 .header-warp {
-     width: 100%;
-     writing-mode: tb-rl;
-     -webkit-writing-mode: vertical-rl;
-     writing-mode: vertical-rl;
+    width: 100%;
+    writing-mode: tb-rl;
 }
 
 .post-meta, .post-meta a, .commentmetadata-content, .wp-block-image figcaption,.site-footer {
@@ -191,7 +190,7 @@ input:-webkit-autofill {
     display: none;
 }
 
-.cat-links, .tags {
+.cat-links, .tags, .posted-on {
     margin-right: .5rem;
 }
 
@@ -227,7 +226,7 @@ input:-webkit-autofill {
 }
 
 #entry p, #entry img {
-    margin: 1.25rem 0;
+    margin: 1rem 0;
     text-indent: 2rem;
     line-height: 2;
 }
@@ -373,6 +372,7 @@ blockquote {
 
 ::-webkit-scrollbar-thumb {
     background-color: #135488;
+    border-radius: .25rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -390,10 +390,13 @@ blockquote {
         float: unset;
         width: 100%;
         position: relative;
+    }
+
+    .header-warp {
         writing-mode: lr-tb;
     }
 
-    #masthead,#main, .site-footer {
+    #masthead, #main, .site-footer {
         padding: 1rem;
     }
 }
