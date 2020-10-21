@@ -21,7 +21,7 @@ a {
     padding: .25rem;
 }
 
-a:hover {
+a:hover,.current-menu-item a {
     color: #FFB800;
 }
 
