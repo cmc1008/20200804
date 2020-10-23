@@ -16,7 +16,7 @@ a {
     text-decoration: none;
 }
 
-#masthead a {
+#site-navigation a {
     color: #ffffff;
 }
 
@@ -62,7 +62,7 @@ h6 {
 h1, h2, h3, h4, h5, h6 {
     margin: 1rem 0;
     line-height: 1.4;
-    font-weight: 400;
+    /* font-weight: 400; */
     background-color: aliceblue;
     padding: .25rem 1rem;
     border-radius: 2rem;
@@ -184,7 +184,7 @@ input:-webkit-autofill {
     background-color: #2F4056;
     background-image: url(https://pdbn.top/bing-img/bing-img.php);
     background-size: cover;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 #masthead:after {
@@ -202,7 +202,8 @@ input:-webkit-autofill {
 .header-warp {
     width: 100%;
     writing-mode: tb-rl;
-    position: relative;
+    position: absolute;
+    right: -3.2rem;
     z-index: 111;
 }
 
@@ -225,6 +226,7 @@ input:-webkit-autofill {
 .site-title {
     font-size: 2rem;
     margin: 0;
+    padding: .5rem;
     line-height: 1.4;
     font-weight: 400;
     background-color: unset;
@@ -232,7 +234,9 @@ input:-webkit-autofill {
 
 .site-description, .taxonomy-description {
     font-style: italic;
+    font-size: .875rem;
     margin-bottom: 1rem;
+    padding: 0.5rem;
 }
 
 #main {
@@ -416,6 +420,10 @@ blockquote {
     #main, .site-footer {
         padding: 2rem;
     }
+
+    .header-warp {
+        right: 0;
+    }
 }
 
 @media screen and (max-width: 47rem) {
@@ -427,6 +435,7 @@ blockquote {
 
     .header-warp {
         writing-mode: lr-tb;
+        position: relative;
     }
 
     #masthead, #main, .site-footer {
