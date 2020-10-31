@@ -12,12 +12,17 @@ body {
 }
 
 a {
-    color: #01AAED;
+    color: #333;
     text-decoration: none;
+    font-weight: 600;
 }
 
 a:hover,.current-menu-item a {
-    color: #FFB800;
+    text-decoration: underline;
+}
+
+.menu-item a {
+    color: #f90;
 }
 
 .tag-cloud-link, .xoxo li, .cat-item, .wp-block-archives-list li {
@@ -50,12 +55,10 @@ h6 {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    display: inline-block;
     margin: 1rem 0;
     line-height: 1.4;
-    background-color: aliceblue;
-    padding: .25rem 1rem;
-    border-radius: 2rem;
+    border-left: .25rem solid #f90;
+    padding-left: .25rem;
 }
 
 .page-template-page_index h1 {
@@ -65,7 +68,7 @@ h1, h2, h3, h4, h5, h6 {
 pre {
     padding: 1rem;
     border-radius: .25rem;
-    background-color: #2c3e50;
+    background-color: #333;
     color: #f1f1f1;
     line-height: 1.4;
     max-height: 30rem;
@@ -88,7 +91,7 @@ img {
     font-size: 1.5rem;
     font-weight: bold;
     line-height: 1;
-    color: #0693e3;
+    color: #f90;
 }
 
 li.post {
@@ -106,9 +109,9 @@ code {
 
 input, select, button, #comment {
     outline-style: none;
-    border: 1px solid #abb8c3;
+    border: 1px solid #f90;
     background-color: #f1f1f1;
-    border-radius: 1.25rem;
+    border-radius: .5rem;
     padding: .5rem;
     margin: .25rem 0;
 }
@@ -124,6 +127,7 @@ select {
 
 button, #submit {
     cursor: pointer;
+    color: #f90;
 }
 
 table {
@@ -160,15 +164,15 @@ input:-webkit-autofill {
 
 .menu-item {
     display: inline-block;
-    padding: .5rem;
-    margin: .25rem 0;
-    border-radius: 50%;
-    background-color: white;
+    padding: .25rem;
+    margin: .25rem;
+    border-radius: .5rem;
+    background-color: #333;
 }
 
 #masthead {
     padding: 2rem;
-    color: #ffffff;
+    color: #f90;
     position: fixed;
     float: left;
     width: 30%;
@@ -179,23 +183,11 @@ input:-webkit-autofill {
     letter-spacing: 2px;
 }
 
-#masthead:after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background: inherit;
-    filter: blur(2px);
-    z-index: 2;
-}
-
 .header-warp {
     width: 100%;
     writing-mode: tb-rl;
     position: absolute;
-    right: -3.6rem;
+    right: -3.2rem;
     z-index: 111;
 }
 
@@ -217,17 +209,17 @@ input:-webkit-autofill {
 
 .site-title {
     font-size: 2rem;
-    margin: 0;
-    padding: 0 1rem;
+    margin: .25rem;
+    padding: .25rem;
     line-height: 1.4;
     font-weight: 600;
-    background-color: unset;
+    display: inline-block;
 }
 
 .site-description, .taxonomy-description {
     font-style: italic;
     font-size: .875rem;
-    margin-bottom: 1rem;
+    padding: .25rem;
 }
 
 #main {
@@ -388,13 +380,25 @@ blockquote {
     max-width: none;
 }
 
+.wp-block-latest-posts.wp-block-latest-posts__list li:hover {
+    background-color: oldlace;
+}
+
+.wp-block-latest-posts__list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+
 ::-webkit-scrollbar {
     width: .5rem;
     height: .5rem;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #01AAED;
+    background-color: #f90;
     border-radius: .25rem;
 }
 
@@ -415,6 +419,10 @@ blockquote {
     .header-warp {
         right: 0;
     }
+
+    .site-title {
+        background-color: #f90;
+    }
 }
 
 @media screen and (max-width: 47rem) {
@@ -430,10 +438,6 @@ blockquote {
     }
 
     #masthead, #main, .site-footer {
-        padding: 1rem;
-    }
-
-    .site-title {
-        padding: 0;
+        padding: .25rem;
     }
 }
