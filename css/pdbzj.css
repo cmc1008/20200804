@@ -222,13 +222,9 @@ input:-webkit-autofill {
     padding: .25rem;
 }
 
-#main {
+#main,.site-footer {
     float: right;
     width: 60%;
-}
-
-.site-footer {
-    float: right;
 }
 
 #main, .site-footer {
@@ -432,7 +428,8 @@ blockquote {
 }
 
 @media screen and (max-width: 47rem) {
-    #masthead, #main {
+    #main,#masthead, .site-footer {
+        padding: .5rem;
         float: unset;
         width: 100%;
         position: relative;
@@ -441,9 +438,5 @@ blockquote {
     .header-warp {
         writing-mode: lr-tb;
         position: relative;
-    }
-
-    #masthead, #main, .site-footer {
-        padding: .5rem;
     }
 }
