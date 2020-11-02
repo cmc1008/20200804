@@ -175,10 +175,10 @@ input:-webkit-autofill {
     color: #f90;
     position: fixed;
     float: left;
-    width: 30%;
+    width: 40%;
     height: 100%;
     background-color: #2F4056;
-    background-image: url(https://pdbn.top/bing-img/bing-img.php);
+    background-image: url(https://cdn.seovx.com/?mom=302);
     background-size: cover;
     letter-spacing: 2px;
 }
@@ -224,7 +224,7 @@ input:-webkit-autofill {
 
 #main {
     float: right;
-    width: 70%;
+    width: 60%;
 }
 
 .site-footer {
@@ -232,7 +232,7 @@ input:-webkit-autofill {
 }
 
 #main, .site-footer {
-    padding: 2rem 10rem;
+    padding: 2rem 13rem;
 }
 
 .widget-title-archive {
@@ -411,7 +411,13 @@ blockquote {
     color: #FFB800;
 }
 
-@media screen and (max-width: 65rem) {
+@media screen and (max-width: 91rem) {
+    #main, .site-footer {
+        padding: 2rem 8rem;
+    }
+}
+
+@media screen and (max-width: 81rem) {
     #main, .site-footer {
         padding: 2rem;
     }
