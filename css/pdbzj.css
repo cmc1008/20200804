@@ -5,7 +5,7 @@
 }
 
 body {
-    font: 1rem/1.6 Georgia, 'Microsoft YaHei',Arial,sans-serif;
+    font: 1.25rem/1.6 Optima-Regular, "Source Han Serif SC", Manuale, "Consolas", "Noto Serif CJK SC", STFangsong,FangSong,FangSong_GB2312, "Songti SC", STSong, serif, PingFangSC-Light, PingFangTC-Light, sans-serif, Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
     color: #2c3e50;
     word-wrap: break-word;
     counter-reset: li;
@@ -53,7 +53,7 @@ h6 {
 h1, h2, h3, h4, h5, h6 {
     margin: 1rem 0;
     line-height: 1.4;
-    border-left: .25rem solid #f90;
+    border-left: .5rem solid #f90;
     padding-left: .25rem;
 }
 
@@ -100,7 +100,8 @@ li.post {
 }
 
 code {
-    color: #cf2e2e;
+    background-color: #333333;
+    color: #f1f1f1;
 }
 
 input, select, button, #comment {
@@ -175,6 +176,7 @@ input:-webkit-autofill {
     background-position: center;
     letter-spacing: 2px;
     text-shadow: 0 0 .25rem #ffffff;
+    text-shadow: 0 0 0.125rem #ffffff, 0 0.125rem 0.25rem rgb(0, 0, 0);
 }
 
 .header-warp {
@@ -267,7 +269,7 @@ blockquote {
 }
 
 .comment-form-author label, .comment-form-email label, .comment-form-url label {
-    width: 6rem;
+    width: 7rem;
     display: inline-block;
     text-align-last: justify;
 }
@@ -409,6 +411,10 @@ blockquote {
 }
 
 @media screen and (max-width: 81rem) {
+    body {
+        font-size:1.125rem;
+    }
+
     #main, .site-footer {
         padding: 2rem;
     }
@@ -419,6 +425,10 @@ blockquote {
 }
 
 @media screen and (max-width: 47rem) {
+    body {
+        font-size:1rem;
+    }
+
     #main,#masthead, .site-footer {
         padding: .5rem;
         float: unset;
