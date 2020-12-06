@@ -5,7 +5,7 @@
 }
 
 body {
-    font: 1.25rem/1.6 Optima-Regular, "Source Han Serif SC", Manuale, "Consolas", "Noto Serif CJK SC", STFangsong,FangSong,FangSong_GB2312, "Songti SC", STSong, serif, PingFangSC-Light, PingFangTC-Light, sans-serif, Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    font: 1rem/1.6 PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,Helvetica Neue,Arial,sans-serif;
     color: #2c3e50;
     word-wrap: break-word;
     counter-reset: li;
@@ -14,7 +14,10 @@ body {
 a {
     color: #333;
     text-decoration: none;
-    font-weight: 600;
+}
+
+.menu-item a {
+    color: #fff;
 }
 
 a:hover,.current-menu-item a {
@@ -133,7 +136,6 @@ thead {
     color: #f1f1f1;
 }
 
-
 td,th {
     padding: .3125rem;
     border: .0625rem solid #f8f8f8;
@@ -155,18 +157,19 @@ input:-webkit-autofill {
     width: 40%;
     height: 100%;
     background-color: #2c3e50;
-    background-image: url(https://pdbn.top/img/img-api.php?type=2);
+    color: #fff;
+    background-image: url(https://pdbn.top/bing-img/bing-img.php);
     background-size: cover;
     background-position: center;
-    letter-spacing: 2px;
-    text-shadow: 0 0 0.125rem #ffffff, 0 0.125rem 0.25rem rgb(0, 0, 0);
+    font-weight: 600;
+    letter-spacing: .125rem;
 }
 
 .header-warp {
     width: 100%;
     writing-mode: tb-rl;
     position: absolute;
-    right: -3.2rem;
+    right: -3.5rem;
     z-index: 111;
 }
 
@@ -241,10 +244,12 @@ blockquote {
 
 .nav-previous:before {
     content: "上一篇：";
+    font-weight: bold;
 }
 
 .nav-next:before {
     content: "下一篇：";
+    font-weight: bold;
 }
 
 #comment {
@@ -394,10 +399,6 @@ blockquote {
 }
 
 @media screen and (max-width: 81rem) {
-    body {
-        font-size:1.125rem;
-    }
-
     #main, .site-footer {
         padding: 2rem;
     }
@@ -405,13 +406,13 @@ blockquote {
     .header-warp {
         right: 0;
     }
+
+    .site-title a {
+        color: #fff;
+    }
 }
 
 @media screen and (max-width: 47rem) {
-    body {
-        font-size:1rem;
-    }
-
     #main,#masthead, .site-footer {
         padding: .5rem;
         float: unset;
