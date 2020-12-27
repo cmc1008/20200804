@@ -7,6 +7,7 @@
 body {
     font: 1rem/1.6 PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,Helvetica Neue,Arial,sans-serif;
     color: #505050;
+    background-color: #fff1dd;
     word-wrap: break-word;
     counter-reset: li;
 }
