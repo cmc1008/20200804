@@ -91,7 +91,7 @@ img {
 }
 
 li.post {
-    font-size: 1.5rem;
+    font-size: 1.125rem;
     list-style: none;
 }
 
@@ -187,9 +187,8 @@ input:-webkit-autofill {
 }
 
 .cat-links, .tags, .posted-on {
-    margin: .5rem;
+    margin: .25rem 0;
     display: block;
-    color: #f90;
 }
 
 .site-title {
@@ -207,6 +206,10 @@ input:-webkit-autofill {
     font-style: italic;
     font-size: .875rem;
     padding: .25rem;
+}
+
+.taxonomy-description {
+    margin-bottom: 2rem;
 }
 
 #main,.site-footer {
@@ -258,7 +261,6 @@ blockquote {
 .nav-previous:before {
     content: "上一篇：";
     font-weight: bold;
-    color: #f90;
 }
 
 .nav-next:before {
