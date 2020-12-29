@@ -13,7 +13,7 @@ body {
 }
 
 a {
-    color: #2d2d2d;
+    color: #f90;
     text-decoration: none;
 }
 
@@ -22,7 +22,7 @@ a {
 }
 
 a:hover,.current-menu-item a {
-    color: #f90;
+    color: #ffaf36;
 }
 
 .tag-cloud-link, .xoxo li, .cat-item, .wp-block-archives-list li {
@@ -190,7 +190,9 @@ input:-webkit-autofill {
     margin: .25rem 0;
     display: block;
 }
-
+.cat-links span, .tags span, .posted-on span {
+    font-weight: 600;
+}
 .site-title {
     font-size: 2rem;
     margin: .25rem;
@@ -266,7 +268,6 @@ blockquote {
 .nav-next:before {
     content: "下一篇：";
     font-weight: bold;
-    color: #f90;
 }
 
 #comment {
