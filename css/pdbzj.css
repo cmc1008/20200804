@@ -398,6 +398,16 @@ blockquote {
     margin: 1rem 0;
 }
 
+.wp-block-latest-posts__list li:nth-child(2n) {
+    background-color: rgb(255, 251, 239);
+    padding: .5rem;
+}
+
+.wp-block-latest-posts__list li:nth-child(2n+1) {
+    background-color: #f8f8f8;
+    padding: .5rem;
+}
+
 ::-webkit-scrollbar {
     width: .5rem;
     height: .5rem;
