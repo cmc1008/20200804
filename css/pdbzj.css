@@ -12,7 +12,8 @@ body {
 }
 
 a {
-    color: #f90;
+    color: #0693e3;
+    font-weight: bold;
     text-decoration: none;
 }
 
@@ -21,7 +22,7 @@ a {
 }
 
 a:hover,.current-menu-item a {
-    color: #ffaf36;
+    text-decoration: underline;
 }
 
 .tag-cloud-link, .xoxo li, .cat-item, .wp-block-archives-list li {
@@ -57,7 +58,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 1rem 0;
     padding-left: .25rem;
     line-height: 1.4;
-    border-left: .25rem solid #f90;
+    border-bottom: .25rem solid #32373c;
 }
 
 .page-template-page_index h1 {
@@ -86,7 +87,7 @@ img {
     font-size: 1.25rem;
     font-weight: bold;
     line-height: 1;
-    color: #f90;
+    color: #32373c;
 }
 
 li.post {
@@ -122,7 +123,7 @@ select {
 
 button, #submit {
     cursor: pointer;
-    color: #f90;
+    color: #0693e3;
 }
 
 table {
@@ -154,7 +155,7 @@ input:-webkit-autofill {
     padding: 2rem;
     position: fixed;
     float: left;
-    width: 40%;
+    width: 30%;
     height: 100%;
     background-color: #2c3e50;
     color: #fff;
@@ -201,7 +202,7 @@ input:-webkit-autofill {
     line-height: 1.4;
     font-weight: 600;
     display: inline-block;
-    border-left: 0;
+    border: 0;
     background-color: unset;
 }
 
@@ -217,7 +218,7 @@ input:-webkit-autofill {
 
 #main,.site-footer {
     float: right;
-    width: 60%;
+    width: 70%;
 }
 
 #main, .site-footer {
@@ -386,10 +387,6 @@ blockquote {
     flex-wrap: wrap;
 }
 
-.wp-block-latest-posts.wp-block-latest-posts__list li:hover {
-    background-color: oldlace;
-}
-
 .wp-block-latest-posts__list li {
     display: flex;
     align-items: center;
@@ -399,7 +396,6 @@ blockquote {
 }
 
 .wp-block-latest-posts__list li:nth-child(2n) {
-    background-color: rgb(255, 251, 239);
     padding: .5rem;
 }
 
@@ -414,17 +410,17 @@ blockquote {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #f90;
+    background-color: #32373c;
     border-radius: .25rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #FFB800;
+    background: #0693e3;
 }
 
 ::selection {
-    background-color: #2f4056;
-    color: #FFB800;
+    background-color: #32373c;
+    color: #f8f8f8;
 }
 
 @media screen and (max-width: 91rem) {
