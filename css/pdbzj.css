@@ -374,34 +374,15 @@ blockquote {
     text-align: right;
 }
 
-.screen-reader-text,.wp-block-search__label {
+.screen-reader-text {
     display: none;
-}
-
-.wp-block-search .wp-block-search__input {
-    max-width: none;
-}
-
-.wp-block-search__inside-wrapper {
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .wp-block-latest-posts__list li {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     flex-wrap: wrap;
     margin: 1rem 0;
-}
-
-.wp-block-latest-posts__list li:nth-child(2n) {
-    padding: .5rem;
-}
-
-.wp-block-latest-posts__list li:nth-child(2n+1) {
-    background-color: #f8f8f8;
-    padding: .5rem;
 }
 
 ::-webkit-scrollbar {
