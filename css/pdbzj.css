@@ -5,7 +5,7 @@
 }
 
 body {
-    font: 400 1rem/1.8 SimSun,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,Helvetica Neue,Arial,sans-serif;
+    font: 400 .875rem/1.8 SimSun,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,Helvetica Neue,Arial,sans-serif;
     color: #505050;
     word-wrap: break-word;
     counter-reset: li;
@@ -92,26 +92,8 @@ li.post {
     list-style: none;
 }
 
-#entry li {
-    margin-left: 2rem;
-}
-
 code {
     background-color: #f8f8f8;
-}
-
-input, select, button, #comment {
-    outline-style: none;
-    border: 1px solid #949494;
-    background-color: #f1f1f1;
-    border-radius: .5rem;
-    padding: .5rem;
-    margin: .25rem 0;
-}
-
-input, select, button {
-    height: 2.5rem;
-    vertical-align: middle;
 }
 
 select {
@@ -120,7 +102,14 @@ select {
 
 button, #submit {
     cursor: pointer;
-    color: #0693e3;
+}
+
+input,#comment {
+    margin: .25rem 0;
+    padding: .25rem;
+    border-radius: .5rem;
+    border: .0625rem solid #949494;
+    outline: none;
 }
 
 table {
@@ -228,8 +217,8 @@ input:-webkit-autofill {
     margin-right: .5rem
 }
 
-#entry p, #entry img {
-    margin: 2rem 0;
+#entry p {
+    margin: .5rem 0;
     text-indent: 2rem;
     line-height: 2.2;
 }
@@ -239,7 +228,6 @@ input:-webkit-autofill {
 }
 
 .wp-block-image figcaption {
-    margin-top: -1rem;
     color: #6c7781;
 }
 
@@ -266,7 +254,7 @@ blockquote {
 }
 
 .comment-form-author label, .comment-form-email label, .comment-form-url label {
-    width: 7rem;
+    width: 5rem;
     display: inline-block;
     text-align-last: justify;
 }
@@ -276,7 +264,7 @@ blockquote {
 }
 
 #commentlist li {
-    padding: 1rem;
+    padding: .5rem;
     margin-bottom: 1rem;
     border: .0625rem solid #abb8c3;
     background-color: #f1f1f1;
@@ -404,7 +392,7 @@ blockquote {
     }
 
     #main, .site-footer {
-        width: 80%;
+        width: 75%;
     }
 }
 
