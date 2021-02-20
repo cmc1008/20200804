@@ -5,7 +5,7 @@
 }
 
 body {
-    font: 400 .875rem/1.8 SimSun,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,Helvetica Neue,Arial,sans-serif;
+    font: 400 1rem/1.8 'Noto Serif SC',PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,Helvetica Neue,Arial,sans-serif;
     color: #505050;
     word-wrap: break-word;
     counter-reset: li;
@@ -396,7 +396,7 @@ blockquote {
     }
 }
 
-@media screen and (max-width: 49rem) {
+@media screen and (max-width: 49rem),(max-height: 27rem)  {
     .header-warp {
         right: 0;
     }
@@ -406,7 +406,7 @@ blockquote {
     }
 }
 
-@media screen and (max-width: 27rem) {
+@media screen and (max-width: 27rem),(max-height: 27rem)  {
     #main,#masthead, .site-footer {
         padding: .5rem;
         float: unset;
