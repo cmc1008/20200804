@@ -249,7 +249,7 @@ blockquote {
 }
 
 .comment-form-author label, .comment-form-email label, .comment-form-url label {
-    width: 5rem;
+    width: 5.5rem;
     display: inline-block;
     text-align-last: justify;
 }
