@@ -5,8 +5,8 @@
 }
 
 body {
-    font: 400 1.125rem/1.8 'Noto Serif SC',PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,Helvetica Neue,Arial,sans-serif;
-    color: #505050;
+    font: normal 1.125rem/1.8 'Noto Serif SC',PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,Helvetica Neue,Arial,sans-serif;
+    color: #333;
     word-wrap: break-word;
     counter-reset: li;
 }
@@ -27,27 +27,27 @@ a:hover,.current-menu-item a {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 h2 {
-    font-size: 1.375rem;
+    font-size: 2rem;
 }
 
 h3 {
-    font-size: 1.25rem;
+    font-size: 1.75rem;
 }
 
 h4 {
-    font-size: 1.125rem
+    font-size: 1.5rem
 }
 
 h5 {
-    font-size: 1rem
+    font-size: 1.25rem
 }
 
 h6 {
-    font-size: .875rem
+    font-size: 1rem
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -141,7 +141,7 @@ input:-webkit-autofill {
     float: left;
     width: 20%;
     height: 100%;
-    background-color: #eaeaea;
+    background-color: #000000;
     background-size: cover;
     background-position: center;
     font-weight: 600;
@@ -154,6 +154,7 @@ input:-webkit-autofill {
     position: absolute;
     right: -3.5rem;
     z-index: 111;
+    color: white;
 }
 
 .post-meta, .post-meta a, .commentmetadata-content, .wp-block-image figcaption,.site-footer {
@@ -200,7 +201,7 @@ input:-webkit-autofill {
 #main,.site-footer {
     float: right;
     width: 80%;
-    padding: 2rem 8rem;
+    padding: 2rem 10rem;
 }
 
 .site-footer span {
@@ -355,11 +356,12 @@ blockquote {
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 1rem 0;
-    background: url(https://pdbn.top/uploads/2021/02/dot.gif) left 13px repeat-x;
+    background: url(https://pdbn.top/uploads/2021/02/dot.gif) left 1.125rem repeat-x;
 }
 
 .wp-block-latest-posts__list li a, .wp-block-latest-posts__post-date {
     background-color: #fff;
+    padding: 0 .25rem;
 }
 
 ::-webkit-scrollbar {
