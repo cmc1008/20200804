@@ -5,7 +5,7 @@
 }
 
 body {
-    font: normal 1.125rem/1.8 'Noto Serif SC',PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,Helvetica Neue,Arial,sans-serif;
+    font: 1.25rem/1.8 'Noto Serif SC',PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,Helvetica Neue,Arial,sans-serif;
     color: #333;
     word-wrap: break-word;
     counter-reset: li;
@@ -13,7 +13,7 @@ body {
 
 a {
     color: #0693e3;
-    font-weight: bold;
+    /* font-weight: bold; */
     text-decoration: none;
 }
 
@@ -52,9 +52,16 @@ h6 {
 
 h1, h2, h3, h4, h5, h6 {
     margin: 1rem 0;
-    padding-left: .25rem;
     line-height: 1.4;
-    border-bottom: .25rem solid #32373c;
+}
+
+article header:after {
+    content: "";
+    width: 70%;
+    height: 1px;
+    display: block;
+    background-color: #000000;
+    margin-bottom: 3rem;
 }
 
 .page-template-page_index h1 {
@@ -87,7 +94,7 @@ img {
 }
 
 li.post {
-    font-size: 1.125rem;
+    margin: 2rem 0;
     list-style: none;
 }
 
@@ -161,10 +168,6 @@ input:-webkit-autofill {
     font-size: .875rem;
 }
 
-.post-meta {
-    margin: .5rem 0 2rem 0;
-}
-
 .updated {
     display: none;
 }
@@ -211,7 +214,7 @@ input:-webkit-autofill {
 
 .widget-title-archive {
     display: inline-block;
-    margin-right: .5rem
+    margin-right: .5rem;
 }
 
 #entry p {
@@ -250,7 +253,7 @@ blockquote {
 }
 
 .comment-form-author label, .comment-form-email label, .comment-form-url label {
-    width: 5.5rem;
+    width: 8rem;
     display: inline-block;
     text-align-last: justify;
 }
@@ -370,12 +373,12 @@ blockquote {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #32373c;
+    background-color: #0693e3;
     border-radius: .25rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #0693e3;
+    background: #000000;
 }
 
 ::selection {
@@ -385,19 +388,22 @@ blockquote {
 
 @media screen and (min-width: 91rem) {
     body {
-        width: 80%;
+        width: 90%;
     }
 
     #main, .site-footer {
-        width: 70%
+        width: 70%;
     }
 }
-
-@media screen and (max-width: 49rem),(max-height: 30rem) {
+@media screen and (max-width: 65rem) {
     body {
-        font-size:1rem
+        font-size:1rem;
     }
-
+        #main, .site-footer {
+        padding: 2rem 5rem;
+    }
+}
+@media screen and (max-width: 49rem),(max-height: 30rem) {
     .header-warp {
         right: 0;
     }
