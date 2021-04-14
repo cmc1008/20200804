@@ -5,7 +5,7 @@
 }
 
 body {
-    font: 1rem/1.8 'Noto Serif SC',PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,Helvetica Neue,Arial,sans-serif;
+    font: .875rem/1.8 'Noto Serif SC',PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,Helvetica Neue,Arial,sans-serif;
     color: #333;
     word-wrap: break-word;
     counter-reset: li;
@@ -26,26 +26,22 @@ a:hover,.current-menu-item a {
 }
 
 h1 {
-    font-size: 2.5rem;
-}
-
-h2 {
     font-size: 1.75rem;
 }
 
-h3 {
+h2 {
     font-size: 1.5rem;
 }
 
-h4 {
-    font-size: 1.25rem
+h3 {
+    font-size: 1.25rem;
 }
 
-h5 {
+h4 {
     font-size: 1rem
 }
 
-h6 {
+h5,h6{
     font-size: .875rem
 }
 
@@ -119,16 +115,17 @@ input:-webkit-autofill {
 
 .menu-item {
     display: inline-block;
-    background-color: rgb(47, 79, 79);
-    padding: .25rem;
-    margin: 0.25rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: .125rem;
+    margin: .125rem;
+    border-radius: .125rem;
 }
 
 #masthead {
     padding: 2rem;
     position: fixed;
     float: left;
-    width: 50%;
+    width: 65%;
     height: 100%;
     background-color: darkslategrey;
     font-weight: 600;
@@ -142,7 +139,7 @@ input:-webkit-autofill {
     width: 100%;
     writing-mode: tb-rl;
     position: absolute;
-    right: -3.5rem;
+    right: -3rem;
     z-index: 111;
     color: teal;
 }
@@ -165,10 +162,7 @@ input:-webkit-autofill {
 }
 
 .site-title {
-    font-size: 2rem;
-    margin: .25rem;
-    padding: .25rem;
-    line-height: 1.4;
+    font-size: 1.75rem;
     font-weight: 600;
     display: inline-block;
     border: 0;
@@ -186,7 +180,8 @@ input:-webkit-autofill {
 
 #main,.site-footer {
     float: right;
-    width: 50%;
+    clear: both;
+    width: 35%;
     padding: 2rem 6rem;
 }
 
@@ -356,7 +351,7 @@ blockquote {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #2f4f4f;
+    background-color: teal;
     border-radius: .25rem;
 }
 
@@ -365,18 +360,44 @@ blockquote {
 }
 
 ::selection {
-    background-color: #2f4f4f;
+    background-color: teal;
     color: #f8f8f8;
 }
+@media screen and (max-width: 106rem) {
+    #main, .site-footer {
+        width: 40%;
+    }
 
+    #masthead {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 91rem) {
+    #main, .site-footer {
+        width: 45%;
+    }
+
+    #masthead {
+        width: 55%;
+    }
+}
+@media screen and (max-width: 86rem) {
+    #main, .site-footer {
+        width: 55%;
+    }
+
+    #masthead {
+        width: 45%;
+    }
+}
 @media screen and (max-width: 65rem) {
     #main, .site-footer {
-        width: 60%;
+        width: 65%;
         padding: 2rem 4rem;
     }
 
     #masthead {
-        width: 40%;
+        width: 35%;
     }
 }
 
@@ -386,7 +407,11 @@ blockquote {
     }
 
     #main, .site-footer {
+        width: 75%;
         padding: 2rem;
+    }
+        #masthead {
+        width: 25%;
     }
 }
 
