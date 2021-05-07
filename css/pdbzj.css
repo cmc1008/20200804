@@ -5,8 +5,7 @@
 }
 
 body {
-    font: .875rem/1.8 'Noto Serif SC',PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,Helvetica Neue,Arial,sans-serif;
-    color: #333;
+    font: .875rem/1.8 Microsoft YaHei,WenQuanYi Micro Hei,Helvetica Neue,Arial,sans-serif;
     word-wrap: break-word;
     counter-reset: li;
 }
@@ -14,6 +13,11 @@ body {
 a {
     color: teal;
     text-decoration: none;
+}
+
+.header-warp a {
+    -webkit-text-fill-color: #cccccc;
+    -webkit-text-stroke: .0625rem black;
 }
 
 a:hover,.current-menu-item a {
@@ -41,7 +45,7 @@ h4 {
     font-size: 1rem
 }
 
-h5,h6{
+h5,h6 {
     font-size: .875rem
 }
 
@@ -115,33 +119,28 @@ input:-webkit-autofill {
 
 .menu-item {
     display: inline-block;
-    background-color: rgba(255, 255, 255, 0.5);
+    /* background-color: rgba(255, 255, 255, 0.5); */
     padding: .125rem;
-    margin: .125rem;
-    border-radius: .125rem;
+    /* margin: .125rem; */
+    /* border-radius: .125rem; */
 }
 
 #masthead {
-    padding: 2rem;
+    font-size: 1.25rem;
+    font-weight: 600;
     position: fixed;
+    color: #ccc;
     float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     width: 65%;
     height: 100%;
-    background-color: darkslategrey;
-    font-weight: 600;
-    letter-spacing: .125rem;
+    background-color: #018080;
     background-image: url(https://pdbn.top/bing-img/bing-img.php);
     background-size: cover;
     background-position: center;
-}
-
-.header-warp {
-    width: 100%;
-    writing-mode: tb-rl;
-    position: absolute;
-    right: -3rem;
-    z-index: 111;
-    color: teal;
 }
 
 .post-meta, .post-meta a, .commentmetadata-content, .wp-block-image figcaption,.site-footer {
@@ -162,11 +161,7 @@ input:-webkit-autofill {
 }
 
 .site-title {
-    font-size: 1.75rem;
-    font-weight: 600;
-    display: inline-block;
-    border: 0;
-    background-color: unset;
+    font-size: 2.5rem;
 }
 
 .site-description, .taxonomy-description {
@@ -337,7 +332,7 @@ blockquote {
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 1rem 0;
-    background: url(https://pdbn.top/uploads/2021/02/dot.gif) left 1.125rem repeat-x;
+    background: url(https://pdbn.top/uploads/2021/02/dot.gif) left .75rem repeat-x;
 }
 
 .wp-block-latest-posts__list li a, .wp-block-latest-posts__post-date {
@@ -363,6 +358,7 @@ blockquote {
     background-color: teal;
     color: #f8f8f8;
 }
+
 @media screen and (max-width: 106rem) {
     #main, .site-footer {
         width: 40%;
@@ -372,6 +368,7 @@ blockquote {
         width: 60%;
     }
 }
+
 @media screen and (max-width: 91rem) {
     #main, .site-footer {
         width: 45%;
@@ -381,6 +378,7 @@ blockquote {
         width: 55%;
     }
 }
+
 @media screen and (max-width: 86rem) {
     #main, .site-footer {
         width: 55%;
@@ -388,8 +386,10 @@ blockquote {
 
     #masthead {
         width: 45%;
+        font-size: 1rem;
     }
 }
+
 @media screen and (max-width: 65rem) {
     #main, .site-footer {
         width: 65%;
@@ -399,18 +399,19 @@ blockquote {
     #masthead {
         width: 35%;
     }
+
+    .site-title {
+        font-size: 1.75rem;
+    }
 }
 
 @media screen and (max-width: 49rem),(max-height: 30rem) {
-    .header-warp {
-        right: 0;
-    }
-
     #main, .site-footer {
         width: 75%;
         padding: 2rem;
     }
-        #masthead {
+
+    #masthead {
         width: 25%;
     }
 }
@@ -420,11 +421,6 @@ blockquote {
         padding: .5rem;
         float: unset;
         width: 100%;
-        position: relative;
-    }
-
-    .header-warp {
-        writing-mode: lr-tb;
         position: relative;
     }
 }
