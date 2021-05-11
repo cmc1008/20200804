@@ -5,19 +5,16 @@
 }
 
 body {
-    font: .875rem/1.8 Microsoft YaHei,WenQuanYi Micro Hei,Helvetica Neue,Arial,sans-serif;
+    font: 1.125rem/1.8 Microsoft YaHei,WenQuanYi Micro Hei,Helvetica Neue,Arial,sans-serif;
     word-wrap: break-word;
     counter-reset: li;
+    width: 60%;
+    margin: auto;
 }
 
 a {
-    color: teal;
+    color: #444;
     text-decoration: none;
-}
-
-.header-warp a {
-    -webkit-text-fill-color: #cccccc;
-    -webkit-text-stroke: .0625rem black;
 }
 
 a:hover,.current-menu-item a {
@@ -54,13 +51,9 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.4;
 }
 
-article header:after {
-    content: "";
-    width: 70%;
-    height: 1px;
-    display: block;
-    background-color: #000000;
-    margin-bottom: 3rem;
+.post-meta {
+    color: #666;
+    margin-bottom: 2rem
 }
 
 .page-template-page_index h1 {
@@ -71,6 +64,7 @@ pre {
     border-radius: .25rem;
     line-height: 1.6;
     overflow: auto;
+    padding: .5rem;
     margin: 1rem 0;
 }
 
@@ -119,28 +113,7 @@ input:-webkit-autofill {
 
 .menu-item {
     display: inline-block;
-    /* background-color: rgba(255, 255, 255, 0.5); */
     padding: .125rem;
-    /* margin: .125rem; */
-    /* border-radius: .125rem; */
-}
-
-#masthead {
-    font-size: 1.25rem;
-    font-weight: 600;
-    position: fixed;
-    color: #ccc;
-    float: left;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 65%;
-    height: 100%;
-    background-color: #018080;
-    background-image: url(https://pdbn.top/bing-img/bing-img.php);
-    background-size: cover;
-    background-position: center;
 }
 
 .post-meta, .post-meta a, .commentmetadata-content, .wp-block-image figcaption,.site-footer {
@@ -161,7 +134,7 @@ input:-webkit-autofill {
 }
 
 .site-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .site-description, .taxonomy-description {
@@ -173,11 +146,17 @@ input:-webkit-autofill {
     margin-bottom: 2rem;
 }
 
-#main,.site-footer {
-    float: right;
-    clear: both;
-    width: 35%;
-    padding: 2rem 6rem;
+.header-warp:after {
+    content: "";
+    width: 70%;
+    height: 1px;
+    display: block;
+    background-color: #000000;
+    margin-bottom: 3rem;
+}
+
+#main,#masthead,.site-footer {
+    padding: 1rem;
 }
 
 .site-footer span {
@@ -191,12 +170,17 @@ input:-webkit-autofill {
 }
 
 #entry p {
-    margin: .5rem 0;
+    margin: 1rem 0;
     line-height: 2.2;
 }
 
 #entry img {
+    margin: 1rem 0;
     border: .0625rem solid #ddd;
+}
+
+#entry a {
+    color: teal;
 }
 
 .wp-block-image figcaption {
@@ -332,7 +316,7 @@ blockquote {
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 1rem 0;
-    background: url(https://pdbn.top/uploads/2021/02/dot.gif) left .75rem repeat-x;
+    background: url(https://pdbn.top/uploads/2021/02/dot.gif) left 1rem repeat-x;
 }
 
 .wp-block-latest-posts__list li a, .wp-block-latest-posts__post-date {
@@ -359,68 +343,15 @@ blockquote {
     color: #f8f8f8;
 }
 
-@media screen and (max-width: 106rem) {
-    #main, .site-footer {
-        width: 40%;
-    }
-
-    #masthead {
-        width: 60%;
-    }
-}
-
-@media screen and (max-width: 91rem) {
-    #main, .site-footer {
-        width: 45%;
-    }
-
-    #masthead {
-        width: 55%;
-    }
-}
-
-@media screen and (max-width: 86rem) {
-    #main, .site-footer {
-        width: 55%;
-    }
-
-    #masthead {
-        width: 45%;
-        font-size: 1rem;
-    }
-}
-
 @media screen and (max-width: 65rem) {
-    #main, .site-footer {
-        width: 65%;
-        padding: 2rem 4rem;
-    }
-
-    #masthead {
-        width: 35%;
-    }
-
-    .site-title {
-        font-size: 1.75rem;
-    }
-}
-
-@media screen and (max-width: 49rem),(max-height: 30rem) {
-    #main, .site-footer {
-        width: 75%;
-        padding: 2rem;
-    }
-
-    #masthead {
-        width: 25%;
+    body {
+        width: 80%;
     }
 }
 
 @media screen and (max-width: 38rem),(max-height: 30rem) {
-    #main,#masthead, .site-footer {
-        padding: .5rem;
-        float: unset;
+    body {
+        font-size:1rem;
         width: 100%;
-        position: relative;
     }
 }
