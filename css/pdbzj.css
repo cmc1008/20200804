@@ -5,11 +5,12 @@
 }
 
 body {
-    font: 1.125rem/1.8 Microsoft YaHei,WenQuanYi Micro Hei,Helvetica Neue,Arial,sans-serif;
+    font: 1.125rem/1.8 Georgia, 冬青黑体简体中文, "Microsoft YaHei", 微软雅黑, SimSun, 宋体, Heiti, 黑体, arial, serif;
     word-wrap: break-word;
     counter-reset: li;
     width: 60%;
     margin: auto;
+    background-color: aliceblue;
 }
 
 a {
@@ -53,7 +54,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .post-meta {
     color: #666;
-    margin-bottom: 2rem
+    margin-bottom: 3rem;
 }
 
 .page-template-page_index h1 {
@@ -134,9 +135,19 @@ input:-webkit-autofill {
 }
 
 .site-title {
+    display: inline-block;
     font-size: 2rem;
+    background-color: black;
+    border-radius: .25rem;
+    margin: 0;
+}
+.site-title a {
+    color: #c7c7c7;
 }
 
+#main {
+    background-color: white;
+}
 .site-description, .taxonomy-description {
     font-size: .875rem;
     padding: .25rem;
@@ -146,16 +157,7 @@ input:-webkit-autofill {
     margin-bottom: 2rem;
 }
 
-.header-warp:after {
-    content: "";
-    width: 70%;
-    height: 1px;
-    display: block;
-    background-color: #000000;
-    margin-bottom: 3rem;
-}
-
-#main,#masthead,.site-footer {
+#main, #masthead, .site-footer {
     padding: 1rem;
 }
 
