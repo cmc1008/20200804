@@ -5,12 +5,12 @@
 }
 
 body {
-    font: 1.125rem/1.8 Georgia,"Microsoft YaHei",宋体,serif;
+    font: 1.125rem/1.8 Georgia,serif;
     word-wrap: break-word;
     counter-reset: li;
     width: 60%;
     margin: auto;
-    background-color: aliceblue;
+    background-color: #f5f5d5;
 }
 
 a {
@@ -147,6 +147,9 @@ input:-webkit-autofill {
 
 #main {
     background-color: white;
+    border-radius: .5rem;
+    border: .125rem solid #d4d4d4;
+    margin: 0 .5rem;
 }
 .site-description, .taxonomy-description {
     font-size: .875rem;
@@ -178,7 +181,8 @@ input:-webkit-autofill {
 
 #entry img {
     margin: 1rem 0;
-    border: .0625rem solid #ddd;
+    border: .125rem solid #d4d4d4;
+    border-radius: .5rem;
 }
 
 #entry a {
