@@ -121,7 +121,8 @@ jQuery(document).ready(function() {
   /*返回顶部js结束*/
   
   /*Animsition 为页面切换添加动画*/
-    $(".animsition").animsition(
+  $(body).animsition({
+   
     inClass               :   'fade-in-up',
     //outClass              :   'fade-in-up',
     inDuration            :    1500,
@@ -136,8 +137,10 @@ jQuery(document).ready(function() {
                               '-o-animation-duration'
                             ],
     //"unSupportCss" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
-    //The default setting is to disable the "animsition" in a browser that does not support "animation-duration".   
+    //The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+     
     overlay               :   false,
+     
     overlayClass          :   'animsition-overlay-slide',
     overlayParentElement  :   'body'
   });
