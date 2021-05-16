@@ -70,7 +70,7 @@ pre {
 }
 
 p code {
-    background-color: aliceblue;
+    background-color: #1ea0c3;
 }
 
 img {
@@ -137,9 +137,11 @@ input:-webkit-autofill {
 .site-title {
     display: inline-block;
     font-size: 2rem;
-    background-color: black;
+    font-weight: 600;
+    background-color: #045d90;
     border-radius: .25rem;
     margin: 0;
+    line-height: 1.4;
 }
 .site-title a {
     color: #c7c7c7;
@@ -186,7 +188,7 @@ input:-webkit-autofill {
 }
 
 #entry a {
-    color: teal;
+    color: #045d90;
 }
 
 .wp-block-image figcaption {
@@ -336,16 +338,16 @@ blockquote {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: teal;
+    background-color: #045d90;
     border-radius: .25rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #1ea0c3;
+    background: #0693e3;
 }
 
 ::selection {
-    background-color: teal;
+    background-color: #045d90;
     color: #f8f8f8;
 }
 
