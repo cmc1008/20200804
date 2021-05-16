@@ -121,7 +121,7 @@ jQuery(document).ready(function() {
   /*返回顶部js结束*/
   
   /*Animsition 为页面切换添加动画*/
-  $(body).animsition({
+  $("body").animsition({
    
     inClass               :   'fade-in-up',
     //outClass              :   'fade-in-up',
