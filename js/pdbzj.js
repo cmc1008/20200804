@@ -122,26 +122,26 @@ jQuery(document).ready(function() {
   
   /*Animsition 为页面切换添加动画*/
   $("body").animsition({
-   
-    inClass               :   'fade-in-up',
-    //outClass              :   'fade-in-up',
-    inDuration            :    1500,
-    outDuration           :    800,
-    linkElement           :   'a',
-    // e.g. linkElement   :   'a:not([target="_blank"]):not([href^=#])'
-    loading               :    true,
-    loadingParentElement  :   'body', //animsition wrapper element
-    loadingClass          :   'animsition-loading',
-    unSupportCss          : [ 'animation-duration',
-                              '-webkit-animation-duration',
-                              '-o-animation-duration'
-                            ],
-    //"unSupportCss" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
-    //The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
-     
-    overlay               :   false,
-     
-    overlayClass          :   'animsition-overlay-slide',
-    overlayParentElement  :   'body'
+    inClass: 'zoom-in-sm',
+    outClass: 'zoom-out-sm',
+    inDuration: 1500,
+    outDuration: 800,
+    linkElement: 'a',
+    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+    loading: true,
+    loadingParentElement: 'body', //animsition wrapper element
+    loadingClass: 'animsition-loading',
+    loadingInner: '', // e.g '<img src="loading.svg" />'
+    timeout: false,
+    timeoutCountdown: 5000,
+    onLoadEvent: true,
+    browser: [ 'animation-duration', '-webkit-animation-duration'],
+    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    overlay : false,
+    overlayClass : 'animsition-overlay-slide',
+    overlayParentElement : 'body',
+    //transition: function(url){ window.location.href = url; }
   });
+  
 });
