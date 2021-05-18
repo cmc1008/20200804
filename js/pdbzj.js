@@ -117,7 +117,7 @@ jQuery(document).ready(function() {
     jQuery("body").append('<div id="backtoTop" data-action="gototop"><canvas id="backtoTopCanvas" width="48" height="48"></canvas><div class="per"></div></div>');
     var T = bigfa_scroll;
     T.backToTop(jQuery("#backtoTop"));
-    T.scrollHook(jQuery(window), "#008080");
+    T.scrollHook(jQuery(window), "#045d90");
   /*返回顶部js结束*/
   
   /*Animsition 为页面切换添加动画*/
