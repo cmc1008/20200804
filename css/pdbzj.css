@@ -5,7 +5,7 @@
 }
 
 body {
-    font: 1rem/1.8 Georgia,serif;
+    font: 1rem/1.8 Microsoft YaHei,Georgia,serif;
     word-wrap: break-word;
     counter-reset: li;
     width: 60%;
@@ -107,6 +107,7 @@ input,#comment {
     border-radius: .5rem;
     border: .0625rem solid #949494;
     outline: none;
+    background-color: #dce8fe;
 }
 
 input:-webkit-autofill {
@@ -153,9 +154,9 @@ input:-webkit-autofill {
 }
 
 #site-navigation,#main {
-    background-color: white;
+    background-color: #dce8ff;
     border-radius: .5rem;
-    border: .25rem solid #d4d4d4;
+    border: .25rem solid #045d90;
 }
 
 .site-description, .taxonomy-description {
@@ -167,9 +168,8 @@ input:-webkit-autofill {
     margin-bottom: 2rem;
 }
 
-#main,.site-branding, #site-navigation, .site-footer {
+.site-branding, #site-navigation, .site-footer {
     padding: .5rem;
-    margin: 0 .5rem;
 }
 
 .site-footer span {
@@ -184,6 +184,7 @@ input:-webkit-autofill {
 
 #main {
     margin-top: 1rem;
+    padding: 1rem 2rem;
 }
 
 .site-footer {
@@ -346,7 +347,7 @@ blockquote {
 }
 
 .wp-block-latest-posts__list li a, .wp-block-latest-posts__post-date {
-    background-color: #fff;
+    background-color: #dce8fe;
     padding: 0 .25rem;
 }
 
@@ -378,5 +379,11 @@ blockquote {
 @media screen and (max-width: 38rem),(max-height: 30rem) {
     body {
         width: 100%;
+    }
+
+    #main,.site-branding, #site-navigation, .site-footer{
+        margin-left: .5rem;
+        margin-right: .5rem;
+        padding: .5rem;
     }
 }
