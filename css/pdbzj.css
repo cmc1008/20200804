@@ -5,13 +5,14 @@
 }
 
 body {
-    font: 1rem/1.8 Microsoft YaHei,Georgia,serif;
-    word-wrap: break-word;
+    font: 1rem/1.8 "STZhongsong", Microsoft YaHei,Georgia,serif;
+    word-break: break-all;
     counter-reset: li;
     width: 60%;
     margin: auto;
     color: #444;
-    background-color: #f3f3f3;
+    text-align: justify;
+    background-color: #eee;
 }
 
 a {
@@ -145,7 +146,6 @@ input:-webkit-autofill {
 #site-navigation,#main {
     background-color: #ffffff;
     border-radius: .5rem;
-    border: .125rem solid #f1f1f1;
 }
 
 .site-description, .taxonomy-description {
@@ -173,10 +173,6 @@ input:-webkit-autofill {
 #main {
     margin-top: 1rem;
     padding: 1rem 2rem;
-}
-
-.site-footer {
-    color: #666;
 }
 
 .widget-title-archive {
@@ -369,7 +365,7 @@ blockquote {
         width: 100%;
     }
 
-    #main,.site-branding, #site-navigation, .site-footer{
+    #main, .site-branding, #site-navigation{
         margin-left: .5rem;
         margin-right: .5rem;
         padding: .5rem;
