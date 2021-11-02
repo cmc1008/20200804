@@ -4,11 +4,16 @@
     box-sizing: border-box;
 }
 
+html {
+    background-color: #000
+}
+
 body {
     font: 1rem/1.8 "STZhongsong", Microsoft YaHei,Georgia,serif;
     word-break: break-all;
     counter-reset: li;
     width: 60%;
+    padding: 2rem;
     margin: auto;
     color: #444;
     text-align: justify;
@@ -34,7 +39,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 h3 {
@@ -52,11 +57,6 @@ h5,h6 {
 h1, h2, h3, h4, h5, h6 {
     margin: 1rem 0;
     line-height: 1.4;
-}
-
-.post-meta {
-    color: #666;
-    margin-bottom: 3rem;
 }
 
 .page-template-page_index h1 {
@@ -143,11 +143,6 @@ input:-webkit-autofill {
     font-weight: 600;
 }
 
-#site-navigation,#main {
-    background-color: #ffffff;
-    border-radius: .5rem;
-}
-
 .site-description, .taxonomy-description {
     font-size: .875rem;
     padding: .25rem;
@@ -166,13 +161,14 @@ input:-webkit-autofill {
     display: inline-block;
 }
 
-.site-branding {
+.header-warp {
     text-align: center;
 }
 
-#main {
-    margin-top: 1rem;
-    padding: 1rem 2rem;
+.single #main, li.post, .aligncenter, .wp-block-categories-list, .wp-block-tag-cloud, .wp-block-latest-posts__list, .xoxo {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: .5rem;
 }
 
 .widget-title-archive {
@@ -363,11 +359,6 @@ blockquote {
 @media screen and (max-width: 38rem),(max-height: 30rem) {
     body {
         width: 100%;
-    }
-
-    #main, .site-branding, #site-navigation{
-        margin-left: .5rem;
-        margin-right: .5rem;
         padding: .5rem;
     }
 }
