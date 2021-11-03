@@ -13,16 +13,20 @@
 
 .icon-31shijian:before {
   content: "\e608";
+  color: #cf2e2e;
 }
 
 .icon-home1:before {
   content: "\e60a";
+  color: #ff0000;
 }
 
 .icon-fenlei1:before {
   content: "\e62e";
+  color: #0693e3;
 }
 
 .icon-biaoqian3:before {
   content: "\e630";
+  color: #ff6900;
 }
