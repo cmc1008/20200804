@@ -4,17 +4,10 @@
     box-sizing: border-box;
 }
 
-html {
-    background-color: #000
-}
-
 body {
-    font: 1rem/1.8 "STZhongsong", Microsoft YaHei,Georgia,serif;
+    font: 1rem/1.8 Georgia,serif;
     word-break: break-all;
     counter-reset: li;
-    width: 60%;
-    padding: 2rem;
-    margin: auto;
     color: #444;
     text-align: justify;
     background-color: #eee;
@@ -57,6 +50,7 @@ h5,h6 {
 h1, h2, h3, h4, h5, h6 {
     margin: 1rem 0;
     line-height: 1.4;
+    font-family: Montserrat, "Helvetica Neue", sans-serif;
 }
 
 .page-template-page_index h1 {
@@ -141,6 +135,7 @@ input:-webkit-autofill {
     display: inline-block;
     font-size: 2rem;
     font-weight: 600;
+    font-family: Montserrat, "Helvetica Neue", sans-serif;
 }
 
 .site-description, .taxonomy-description {
@@ -161,8 +156,14 @@ input:-webkit-autofill {
     display: inline-block;
 }
 
-.header-warp {
+#main {
+    width: 60%;
+    margin: auto;
+}
+
+#masthead, .site-footer {
     text-align: center;
+    padding: 2rem 0;
 }
 
 .single #main, li.post, .aligncenter, .wp-block-categories-list, .wp-block-tag-cloud, .wp-block-latest-posts__list, .xoxo {
@@ -351,14 +352,39 @@ blockquote {
 }
 
 @media screen and (max-width: 65rem) {
-    body {
+    #main {
         width: 80%;
     }
 }
 
 @media screen and (max-width: 38rem),(max-height: 30rem) {
-    body {
+    #main {
+        width: 96%;
+    }
+}
+
+@media screen and (min-width: 38em) {
+    html {
+        background-color: #000;
+        margin: 1.5rem;
+    }
+
+    html:before {
+        top: 0;
+    }
+
+    html:before, html:after {
+        background: inherit;
+        content: "";
+        display: block;
+        height: 1.5rem;
+        left: 0;
+        position: fixed;
         width: 100%;
-        padding: .5rem;
+        z-index: 99;
+    }
+
+    html:after {
+        bottom: 0;
     }
 }
