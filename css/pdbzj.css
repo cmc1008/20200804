@@ -10,11 +10,14 @@ body {
     counter-reset: li;
     color: #444;
     text-align: justify;
-    background-color: #eee;
+    background-color: #fff;
+    width: 80%;
+    margin: auto;
+    padding: 2rem;
 }
 
 a {
-    color: #666;
+    color: #045d90;
     text-decoration: none;
 }
 
@@ -136,6 +139,7 @@ input:-webkit-autofill {
     font-size: 2rem;
     font-weight: 600;
     line-height: 1.4;
+    margin: 1rem 0;
     font-family: Montserrat, "Helvetica Neue", sans-serif;
 }
 
@@ -157,22 +161,15 @@ input:-webkit-autofill {
     display: inline-block;
 }
 
-#main {
-    width: 60%;
-    margin: auto;
-}
-
 #masthead, .site-footer {
     text-align: center;
     padding: 2rem 0;
 }
-
-.single #main, li.post, .aligncenter, .wp-block-categories-list, .wp-block-tag-cloud, .wp-block-latest-posts__list, .xoxo {
-    background-color: #fff;
-    padding: 1rem;
-    border-radius: .5rem;
+#masthead {
+    background-image: url(https://pdbn.top/uploads/2021/11/banner.jpg);
+    background-size: cover;
+    background-position: bottom;
 }
-
 .widget-title-archive {
     display: inline-block;
     margin-right: .5rem;
@@ -186,10 +183,6 @@ input:-webkit-autofill {
     margin: 1rem 0;
     border: .125rem solid #d4d4d4;
     border-radius: .5rem;
-}
-
-#entry a {
-    color: #045d90;
 }
 
 .wp-block-image figcaption {
@@ -353,14 +346,15 @@ blockquote {
 }
 
 @media screen and (max-width: 65rem) {
-    #main {
-        width: 80%;
+    body {
+        width: 90%;
     }
 }
 
 @media screen and (max-width: 38rem),(max-height: 30rem) {
-    #main {
+    body {
         width: 96%;
+        padding: 1rem;
     }
 }
 
