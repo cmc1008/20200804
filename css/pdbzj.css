@@ -5,15 +5,14 @@
 }
 
 body {
-    font: 1rem/1.8 Montserrat, "Helvetica Neue", sans-serif;
+    font: 1.125rem/2 Montserrat, "Helvetica Neue", sans-serif;
     word-break: break-all;
     counter-reset: li;
     color: #444;
     text-align: justify;
     background-color: #fff;
-    width: 80%;
     margin: auto;
-    padding: 2rem 10rem;
+    padding: 2rem 25%;
 }
 
 a {
@@ -162,13 +161,9 @@ input:-webkit-autofill {
 
 #masthead, .site-footer {
     text-align: center;
-    /* padding: 2rem 0; */
 }
 
 #masthead {
-    /* background-image: url(https://pdbn.top/uploads/2021/11/banner.jpg); */
-    /* background-size: cover; */
-    /* background-position: bottom; */
     border-bottom: 0.25rem solid #333;
 }
 
@@ -178,7 +173,7 @@ input:-webkit-autofill {
 }
 
 #entry p {
-    margin: 1rem 0;
+    margin: 1.5rem 0;
 }
 
 #entry img {
@@ -320,7 +315,7 @@ blockquote {
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 1rem 0;
-    background: url(https://pdbn.top/uploads/2021/02/dot.gif) left 1rem repeat-x;
+    background: url(https://pdbn.top/uploads/2021/02/dot.gif) left 1.125rem repeat-x;
 }
 
 .wp-block-latest-posts__list li a, .wp-block-latest-posts__post-date {
