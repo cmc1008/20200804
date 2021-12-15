@@ -5,7 +5,7 @@
 }
 
 body {
-    font: 1rem/1.8 Georgia,serif;
+    font: 1rem/1.8 Montserrat, "Helvetica Neue", sans-serif;
     word-break: break-all;
     counter-reset: li;
     color: #444;
@@ -13,11 +13,11 @@ body {
     background-color: #fff;
     width: 80%;
     margin: auto;
-    padding: 2rem;
+    padding: 2rem 10rem;
 }
 
 a {
-    color: #045d90;
+    color: #339933;
     text-decoration: none;
 }
 
@@ -69,7 +69,7 @@ pre {
 }
 
 p code {
-    background-color: #1ea0c3;
+    background-color: #99CC00;
 }
 
 img {
@@ -139,8 +139,7 @@ input:-webkit-autofill {
     font-size: 2rem;
     font-weight: 600;
     line-height: 1.4;
-    margin: 1rem 0;
-    font-family: Montserrat, "Helvetica Neue", sans-serif;
+    margin: 0;
 }
 
 .site-description, .taxonomy-description {
@@ -163,13 +162,16 @@ input:-webkit-autofill {
 
 #masthead, .site-footer {
     text-align: center;
-    padding: 2rem 0;
+    /* padding: 2rem 0; */
 }
+
 #masthead {
-    background-image: url(https://pdbn.top/uploads/2021/11/banner.jpg);
-    background-size: cover;
-    background-position: bottom;
+    /* background-image: url(https://pdbn.top/uploads/2021/11/banner.jpg); */
+    /* background-size: cover; */
+    /* background-position: bottom; */
+    border-bottom: 0.25rem solid #333;
 }
+
 .widget-title-archive {
     display: inline-block;
     margin-right: .5rem;
@@ -332,22 +334,23 @@ blockquote {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #045d90;
+    background-color: #339933;
     border-radius: .25rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #0693e3;
+    background: #99CC00;
 }
 
 ::selection {
-    background-color: #045d90;
+    background-color: #339933;
     color: #f8f8f8;
 }
 
 @media screen and (max-width: 65rem) {
     body {
         width: 90%;
+        padding: 2rem 4rem;
     }
 }
 
@@ -360,7 +363,7 @@ blockquote {
 
 @media screen and (min-width: 38em) {
     html {
-        background-color: #000;
+        background-color: #efefef;
         margin: 1.5rem;
     }
 
