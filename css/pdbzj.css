@@ -5,19 +5,18 @@
 }
 
 body {
-    font: 1.125rem/2 Montserrat, "Helvetica Neue", sans-serif;
+    font: 1.25rem/2 Tahoma, Helvetica, Arial, 'Microsoft YaHei', sans-serif;
     word-break: break-all;
     counter-reset: li;
     color: #444;
     text-align: justify;
     background-color: #fff;
     margin: auto;
-    padding: 2rem 25%;
+    padding: 2rem 15%;
 }
 
 a {
-    color: #339933;
-    text-decoration: none;
+    color: #040404;
 }
 
 a:hover,.current-menu-item a {
@@ -30,7 +29,7 @@ a:hover,.current-menu-item a {
 }
 
 h1 {
-    font-size: 1.75rem;
+    font-size: 2rem;
 }
 
 h2 {
@@ -160,7 +159,7 @@ input:-webkit-autofill {
 }
 
 #masthead, .site-footer {
-    text-align: center;
+    /* text-align: center; */
 }
 
 #masthead {
@@ -344,6 +343,7 @@ blockquote {
 
 @media screen and (max-width: 65rem) {
     body {
+        font-size: 1rem;
         width: 90%;
         padding: 2rem 4rem;
     }
@@ -358,7 +358,7 @@ blockquote {
 
 @media screen and (min-width: 38em) {
     html {
-        background-color: #efefef;
+        background-color: #e6e6e6;
         margin: 1.5rem;
     }
 
